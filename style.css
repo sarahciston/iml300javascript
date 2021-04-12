@@ -1,5 +1,15 @@
 /* CSS files add styling rules to your content */
 
+
+/* @font-face {
+    font-family: HealTheWeb;
+    src: url("/HealTheWebA-Regular.otf");
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: helvetica, arial, sans-serif;
   margin: 2em;
