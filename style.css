@@ -1,7 +1,8 @@
 /* CSS files add styling rules to your content */
 
 
-/* @font-face {
+/* fonts supplied with Adobe TypeKit
+@font-face {
     font-family: HealTheWeb;
     src: url("/HealTheWebA-Regular.otf");
 } */
@@ -11,11 +12,17 @@ html {
 }
 
 body {
-  font-family: helvetica, arial, sans-serif;
+  font-family: arlette, helvetica, arial, sans-serif;
+  font-weight: 300;
   margin: 2em;
 }
 
 h1 {
   font-style: bold;
   color: #373fff;
+}
+
+img[alt="markdown-image"] {
+  width="100px"
+  height="100px"
 }
