@@ -1,24 +1,25 @@
 /* CSS files add styling rules to your content */
 
-
-/* fonts supplied with Adobe TypeKit
+/* also some fonts from Adobe TypeKit (arlette) */
 @font-face {
-    font-family: HealTheWeb;
-    src: url("/HealTheWebA-Regular.otf");
-} */
+  font-family: AvenirLight;
+  src: url("https://cdn.glitch.com/d52771bb-1150-4ddb-9baf-2f10e553cd16%2FAvenirLTW05-35Light.woff?v=1618529499790");
+  font-family: NotoSansBold;
+  src: url("https://cdn.glitch.com/d52771bb-1150-4ddb-9baf-2f10e553cd16%2FNotoSans-Bold.woff?v=1618529497977");
+}
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: arlette, helvetica, arial, sans-serif;
+  font-family: arlette, AvenirLight, helvetica, arial, sans-serif;
   font-weight: 300;
   margin: 2em;
 }
 
 h1 {
-  font-style: bold;
+/*   font-family: NotoSansBold; */
   color: #373fff;
 }
 

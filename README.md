@@ -1,5 +1,7 @@
 # Not So Vanilla 🍦 "Just" Javascript
 
+![](https://cdn.glitch.com/d52771bb-1150-4ddb-9baf-2f10e553cd16%2Fgiphy-5.gif?v=1618529264931)
+
 ## What Is Javascript?
 
 > "The programming language of HTML and the Web. Interaction with the user, animation, etc, all done with JavaScript." (Q)
@@ -10,7 +12,7 @@
 
 > Pssst, we've been coding in Javascript _this whole time!_
 
-> And there's a TON of other JS libraries for ANY specialized thing you might want to do, from make sleek websites, to run servers, to music, virtual reality, or machine learning. [Here's a list](https://en.wikipedia.org/wiki/List_of_JavaScript_libraries)
+> And there's a TON of other JS libraries for ANY specialized thing you might want to do, from make sleek websites, to run servers, to music, virtual reality, or machine learning. <a href="https://en.wikipedia.org/wiki/List_of_JavaScript_libraries" target="_blank">Here's a list</a>
 
 > We say "vanilla"🍦 Javascript when we mean not using any added libraries, but usually you're always using _some_... this demo will offer some code concepts that apply to web development as well as general times you're working with Javascript situations.
 
@@ -43,11 +45,11 @@
 ## Review: P5.js DOM 
 > Besides adding functions to JS, the P5.js library "wraps" up some Javascript to simplify the syntax. 
 
-> P5's [DOM functions](https://p5js.org/reference/#group-DOM):
+> <a href="https://p5js.org/reference/#group-DOM" target="_blank">P5's DOM functions</a>:
   - `selectElement()`
   - `createElement('tag', [content inside])`
   - `createDiv([html/content])`
-  - [Things to do on a selected or created element](https://p5js.org/reference/#/p5.Element)(`el`):
+  - <a href="https://p5js.org/reference/#/p5.Element" target="_blank">Things to do on a selected or created element</a> (`el`):
     - `el.style('color', 'black')`, `el.style('font-size', '18px')`
     - `el.position(0,0)` (absolute position)
     - `el.attribute('align', 'center')`
@@ -55,8 +57,8 @@
     - `el.size()`
     - `el.html(<tag></tag)>, true)` note: the additon of true appends instead of replacing (if no argument, returns existing)
     - `el.parent()`, `el.child()` attaches new thing to existing thing
-    - [Events](https://youtu.be/HsDVz2_Qgow): `createButton()`, `el.mouseClicked()`, `el.mouseOver()`, `el.mouseOut()`, `changed()`, `createInput()`
-    - Highly recommend the [callbacks on multiple elements video](https://youtu.be/KeZBpeH59Q4)
+    - <a href="https://youtu.be/HsDVz2_Qgow" target="_blank">Events</a>: `createButton()`, `el.mouseClicked()`, `el.mouseOver()`, `el.mouseOut()`, `changed()`, `createInput()`
+    - Highly recommend the <a href="https://youtu.be/KeZBpeH59Q4" target="_blank">callbacks on multiple elements video</a>
 
 >These are all "wrappers" of the same code you learned to write in plain JS. Behind the scenes, it's calling that plain JS to do this work. 
 
@@ -67,11 +69,11 @@
 - **Select** by id, class, element/tag, parent, child
 
   - `document.getElementById('id')` `document.getElementByClassName('class')` `document.querySelector('#id')` `document.querySelectorAll('.class')`
-  - Note the different syntax options. [Document](https://www.w3schools.com/jsref/dom_obj_document.asp) for more choices.
+  - Note the different syntax options. <a href="https://www.w3schools.com/jsref/dom_obj_document.asp" target="_blank">Document</a> for more choices.
   - set it to a variable name to 'save' it for reuse:
     `let line = document.querySelector('#line') //selects the element with the id line`
 
-- **Create** makes new elements and [**Append**](https://www.w3schools.com/jsref/dom_obj_all.asp) places the items we made where we want them
+- **Create** makes new elements and <a href="https://www.w3schools.com/jsref/dom_obj_all.asp" target="_blank"><b>Append</b></a> places the items we made where we want them
 
   ```javascript
   let button = document.createElement("BUTTON"); // creates a button but hasn't put it anywhere yet
@@ -81,21 +83,21 @@
 
 - **Add/remove class is *confusing, don't worry*** because they're each doing slightly different things
 
-  - `el.className = 'class'` set equal to [className](https://www.w3schools.com/jsref/prop_html_classname.asp) makes it that class only, erases any others
-  - OR: `el.classList.toggle('class')` note [toggle](https://www.w3schools.com/jsref/prop_element_classlist.asp) on/off choice can avoid a check before if/then but might intro errors
-  - OR: [add/remove from classList](https://www.w3schools.com/howto/howto_js_add_class.asp) `el.classList.add('class')` and `el.classList.remove('class')` note the name is in quotes but doesn't need dot before it because class is in the attribute, ...maintains a list of classes
+  - `el.className = 'class'` set equal to <a href="https://www.w3schools.com/jsref/prop_html_classname.asp" target="_blank">className</a> makes it that class only, erases any others
+  - OR: `el.classList.toggle('class')` note <a href="https://www.w3schools.com/jsref/prop_element_classlist.asp" target="_blank">toggle</a> on/off choice can avoid a check before if/then but might intro errors
+  - OR: <a href="https://www.w3schools.com/howto/howto_js_add_class.asp" target="_blank">add/remove from classList</a> `el.classList.add('class')` and `el.classList.remove('class')` note the name is in quotes but doesn't need dot before it because class is in the attribute, ...maintains a list of classes
 
-- [**Modify Styles**](https://www.w3schools.com/jsref/dom_obj_style.asp)
+- <a href="https://www.w3schools.com/jsref/dom_obj_style.asp" target="_blank"><b>Modify Styles</b></a>
 
   - `el.style.color = 'blue'`
   - `el.style.borderBottom = '1px dotted black'`
 
-- [**Events**](https://www.w3schools.com/jsref/dom_obj_event.asp):
+- <a href="https://www.w3schools.com/jsref/dom_obj_event.asp" target="_blank"><b>Events</b></a>:
   - think about how these events combine using 1) thing you touch and 2) thing you want to affect
   - click, scroll, hover, mouseEnter/Leave, slideToggle etc. onclick vs item.click()
   - Hide/show/fade/delay/toggle all done with **callbacks**:
     `document.addEventListener('eventname', functionName)` ``
-  - [Transformations](https://www.w3schools.com/css/css3_2dtransforms.asp)
+  - <a href="https://www.w3schools.com/css/css3_2dtransforms.asp" target="_blank">Transformations</a>
   
 >Note where elements appear, in the canvas vs in the rest of the DOM/page depending on how you're writing them. As you're blending the P5 library with other Javascript this can get confusing. P5 has ways to do both, but they're different. So does plain JS. They serve different purposes:
   - e.g. Choose `createImage()` (P5) or `document.createElement('IMG')` and then `appendChild` (plainJS) anywhere in the DOM vs choose `image()` to put it inside a canvas element.  
@@ -108,7 +110,7 @@
 
 > You already know (because you know JS) or may see around town:
 
-1. **[Callbacks](https://youtu.be/NcCEzzd9BGE) and Code Patterns**
+1. <a href="https://youtu.be/NcCEzzd9BGE" target="_blank"><b>Callbacks</b></a> and Code Patterns**
   - MAKE & NAME : create a thing & assign it to a variable so you can keep referring to it
   - SCHEDULE & ACT: use functions to say what you want to do with it when
     
@@ -190,14 +192,6 @@
   - [ML5](https://ml5js.org), part of the p5/Processing family, is a simpler version of (aka built on/wrapper of Tensorflow)
   - [Tensorflow.js] 
   - Lots of little ML tools out there, another lesson maybe for code collective?
-
----
-
-## Examples made with (almost) "just" javascript
-
-- [Cyberfeminism Index](https://cyberfeminismindex.com/) only uses a bit of JQuery but wouldn't need it. Also another type of site your project could be, gathering resources/examples for others.
-
-- []()
 
 ---
 
